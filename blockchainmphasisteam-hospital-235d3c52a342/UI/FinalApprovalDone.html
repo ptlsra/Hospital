@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hospital Admin-Claim Pending Final Approval</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<link href="css/opencss.css" rel="stylesheet" type="text/css" />
+
+<link href="css/default.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="css/Font-Awesome-master/web-fonts-with-css/css/fontawesome-all.min.css">
+	<script src="js/jquery.min.js"></script>
+   
+    <script src="js/jquery-1.11.1.min.js"></script>
+    
+
+<script src="js/jquery-ui-1.11.1/jquery-ui.min.js"></script>
+
+<link rel="stylesheet" href="js/jquery-ui-1.11.1/jquery-ui.css" />
+      
+    
+
+</head>
+<body>
+<div id="wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<h1><a href="#">ABC Hospital</a></h1>
+
+		</div>
+		<div id="menu">
+			<ul>
+				<li ><a href="index.html" accesskey="1" title="">Homepage</a></li>
+				<li ><a href="registerPatient.html" accesskey="2" title="">Register Patient</a></li>
+				<li ><a href="InitiateClaim.html" accesskey="3" title="">Initiate Claim</a></li>
+				<li class="active"><a href="ViewClaims.html" accesskey="4" title="">View Claims</a></li>
+				<li><a href="#" accesskey="5" title="">Contact Us</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="banner" class="container" style="height:100px;">
+		
+		<div id="column2"><img src="images/pics03.jpg" width="1300" height="200" alt="" /></div>
+	</div>
+	
+	<div id="page" class="container">
+		<div id="content">
+				<h2 style="margin-left:150px;" id="initClaim">Initiate Claim</h2>
+   
+   <h4 style="margin-top:20px;margin-left:150px;font-size:20px;">Claim Information</h4>
+  <form  id='uploadForm' >   
+   
+   <table class="tableContent"  style="width:900px;">
+   
+  <tr>
+    <td>Policy ID</td>
+    <td id="policyId" class="boldStyle"> </td>
+    
+    <td>Claim ID</td>
+    <td id="claimIds" class="boldStyle"></td>
+  
+    
+  </tr>
+  <tr>
+  <td>Policy Issued</td>
+    <td id="timeStamp" class="boldStyle"></td>
+    
+     <td>Policy Validity</td>
+    <td id="policyValidity" class="boldStyle"></td>
+    
+     
+  </tr>
+ <tr>
+ 
+     <td>Policy Holder</td>
+    <td id="policyHolder" class="boldStyle"> </td>
+    
+    <td>Policy Document</td>
+    <td><a href="#" id="btnShow">View Document</a></td>
+    
+    
+   
+  </tr>
+  
+  <tr>
+   
+     <td>Policy Provider</td>
+    <td id="policyProvider" class="boldStyle"></td>
+   
+    <td>Patient Address</td>
+    <td id="pAddress"></td>
+    
+  
+    
+  </tr>
+  
+  <tr>
+    <td>Patient Name</td>
+    <td id="patientName" class="boldStyle"></td>
+    
+    <td>Sum Insured(USD)</td>
+    <td id="sumInsured" class="boldStyle"></td>
+  
+    
+  </tr>
+  
+  
+   <tr>
+   <td>Claim Estimate(USD)</td>
+   
+     <td id="claimEstimate" class="boldStyle"></td>
+    <td>Insurer</td>
+    <td id="InsurerName" class="boldStyle"></td>
+  
+   
+  </tr>
+  
+  
+  <tr>
+  
+   <td>TPA</td>
+   
+     <td id="tpa" class="boldStyle"></td>
+     
+    <td>Estimate Document</td>
+    <td><a href="#" id="btnShow3">View Document</a></td>
+  
+ 
+  </tr>
+  
+  <tr>
+   <td>Claim Amount(USD)</td>
+   
+     <td><input type="text" name="claimAmounts" id="claimAmounts" /></td>
+    
+    
+    <td>Bill Document</td>
+    <td><a href="#" id="btnShow2">View Document</a></td>
+    
+    
+ 
+  </tr>
+  
+   <tr>
+   
+    
+    
+  <td colspan="2">Claim Status</td>
+   
+     <td colspan="2" class="boldStyle">Claim Approved</td>
+    
+  </tr>
+  
+  
+  
+   
+   </table>
+      
+       
+   </form>
+   
+   
+   
+   
+</div>
+		</div>
+		
+</div>
+
+<div id="dialog" style="display: none;width:700px;" >
+    
+        <iframe id="frame" style="width:600px;height:400px;"></iframe>
+        
+
+</div>
+
+<div id="footer" class="container">
+	<p> All rights reserved. Developed By Mphasis</p>
+</div>
+    <script src="js/Properties.js"></script>
+   
+    <script src="js/finalApprovalPending.js"></script>
+    
+<script>
+
+
+
+</script>
+
+</body>
+</html>

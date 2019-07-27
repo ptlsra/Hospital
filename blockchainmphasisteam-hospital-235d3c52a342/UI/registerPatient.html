@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : Handling 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20121212
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hospital Admin-Register A Patient</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="css/opencss.css" rel="stylesheet" type="text/css" />
+
+<link href="css/default.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="css/Font-Awesome-master/web-fonts-with-css/css/fontawesome-all.min.css">
+	<script src="js/jquery.min.js"></script>
+   
+    <script src="js/jquery-1.11.1.min.js"></script>
+    
+
+<script src="js/jquery-ui-1.11.1/jquery-ui.min.js"></script>
+
+<link rel="stylesheet" href="js/jquery-ui-1.11.1/jquery-ui.css" />
+      
+    
+
+</head>
+<body>
+<div id="wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<h1><a href="#">ABC Hospital</a></h1>
+
+		</div>
+		<div id="menu">
+		<ul>
+				<li ><a href="index.html" accesskey="1" title="">Homepage</a></li>
+				<li class="active"><a href="registerPatient.html" accesskey="2" title="">Register Patient</a></li>
+				<li><a href="InitiateClaim.html" accesskey="3" title="">Initiate Claim</a></li>
+				<li><a href="ViewClaims.html" accesskey="4" title="">View Claims</a></li>
+				<li><a href="#" accesskey="5" title="">Contact Us</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="banner" class="container" style="height:100px;">
+		
+		<div id="column2"><img src="images/pics03.jpg" width="1300" height="200" alt="" /></div>
+	</div>
+	
+	<div id="page" class="container">
+		<div id="content">
+				<h2 style="margin-left:150px;">Register A Patient</h2>
+   <div class="search">
+   <p id="empty" style="color:red;">**** Policy Id cannot be empty.</p>
+      <input type="text" class="searchTerm" placeholder="Enter Policy Id Provided By Patient." id="searchTerm" required>
+      <button type="submit" class="searchButton" id="searchButton">
+        <i class="fas fa-search"></i>
+     </button>
+   </div>
+   <h4 style="margin-top:80px;margin-left:150px;font-size:20px;">Policy Information</h4>
+   <table class="tableContent">
+   
+  <tr>
+    <td>Policy ID</td>
+    <td id="policyId" class="boldStyle"> </td>
+    
+     <td>Policy Holder</td>
+    <td id="policyHolder" class="boldStyle"></td>
+  </tr>
+  <tr>
+  
+     <td>Policy Validity</td>
+    <td id="policyValidity" class="boldStyle"></td>
+    
+     <td>Policy Issued</td>
+    <td id="timeStamp" class="boldStyle"></td>
+  </tr>
+ <tr>
+ <td>Policy Provider</td>
+    <td id="policyProvider" class="boldStyle"></td>
+    <td >Policy Document</td>
+    <td ><a href="#" id="btnShow">View Document</a></td>
+  </tr>
+  
+   </table>
+      <h4 style="margin-top:20px;margin-left:150px;font-size:20px;">Policy Dependents</h4>
+      
+       <table class="tableContent" id="depTable">
+   <tr>
+  <th>ID</th>
+  <th>Dependent Name</th>
+   <th>Age</th>
+   <th>Gender</th>
+   <th>Relation</th>
+   
+  </tr>
+   </table>
+   
+   <form class="simpleForm" id="patientRegistrationForm">
+<input type="button" value="Enroll Patient" class="dependentSubmit" id="enrollPatient"></input>
+</form>   
+   
+   <form class="simpleForm2" id="mainForm"> 
+     <fieldset>
+	<legend>Enter Patient Information:</legend>
+
+  <label> Patient's Name * </label>
+  <br>
+  <select id="soflow2" name="patientName">
+   
+  </select>
+	 <br>
+						    
+	<label> Policy ID * </label>
+	<br>
+	 <input type="text"  placeholder="Enter Policy ID Name" id="patientpolicyId" name="patientpolicyId" readonly>	
+	 <br>	
+	 
+	 <label>DOB * </label>
+	 <br>
+	 <input type="date"  placeholder="Enter Date Of Birth" id="dob" name="dob" required>	
+	 <br>	
+	 
+	  <label>Age * </label>
+	  <br>
+	 <input type="text"  placeholder="Enter Age" id="age" name="age" readonly>	
+	 <br>	
+	 
+	 
+    <label>Gender * </label>
+    <br>
+  	 <input type="text"  placeholder="Enter Patient's Gender" id="gender" name="gender" readonly>
+
+	 <br>
+	 
+	   <label>Contact Details * </label>
+	   <br>
+	 <input type="number"  placeholder="Enter Phone Number" id="phoneNo" name="phoneNo" required>	
+	 <br>
+	 
+	  <label>Email ID *</label>
+	  <br>
+	 <input type="email"  placeholder="Enter email ID" id="email" name="email" required>	
+	 <br>	
+	 <br>			
+	 <input type="submit" value="Register" class="dependentSubmit" id="reqSubmitNew"></input>
+	 	    
+			 </fieldset>
+			 
+			 
+			 		    
+   </form>
+   <div id="myModal" class="modal" >
+				<div class="modal-content">
+    <span class="close">&times;</span>
+    <p style="margin-left:120px;font-weight:bold;font-size:16px;">Please Wait...</p>
+<div class="loader" style="margin-left:120px;"></div>    
+  </div>
+</div>
+
+
+
+<div id="txModal" class="modal" >
+				<div class="modal-contentnew">
+    <span class="close">&times;</span>
+<div >
+    <p style="margin-left:120px;font-weight:bold;font-size:16px;">Transaction successfull with TxID:</p>
+    <p id="txId"></p>
+    </div>
+  </div>
+</div>
+
+</div>
+		</div>
+		
+</div>
+
+<div id="dialog" style="display: none;width:700px;" >
+    
+        <iframe id="frame" style="width:600px;height:400px;"></iframe>
+        
+
+</div>
+
+<div id="footer" class="container">
+	<p> All rights reserved. Developed By Mphasis</p>
+</div>
+    <script src="js/Properties.js"></script>
+    <script src="js/regPatient.js"></script>
+    
+     <script src="js/Properties.js"></script>
+    <script src="js/regPatientPost.js"></script>
+    
+
+
+</body>
+</html>
